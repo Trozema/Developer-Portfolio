@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -226,38 +226,25 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\components\\MyLayout.js";
 
 
-/* In our app, we'll use a common style across various pages. For this purpose, we can create a common Layout component and use it for each of our pages. Here's an example: 
-
-Since Next.js is used to create server-rendered pages, adding a link using a normal <a> tag would cause a link that would be navigated to via the server. 
-This is obviously not always necessary. 
-To support client-side navigation (this takes place in the browser, without making a request to the server) we use Next.js’ Link API.*/
-
-/*You can use this built-in component to append elements to the <head> element of the page. More info here: https://github.com/zeit/next.js/#populating-head 
-Notice that we add the link for the stylesheet for using React-Bootstrap components to the <Head>. */
-
 
 
 var layoutStyle = {
   margin: 20,
   padding: 20,
   border: '1px solid #DDD'
-  /* Notice in the example below that we pass children and title as props to the Layout components.
-  If you remove {children}, the Layout cannot render the content we put inside the Layout element. 
-  Have a look at ./pages/index.js to see where we pass props through to this Layout Component. */
-
 };
 
 var Layout = function Layout(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -267,20 +254,20 @@ var Layout = function Layout(props) {
     crossorigin: "anonymous",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 17
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: layoutStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 24
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 25
     },
     __self: this
   }), props.children));
@@ -325,14 +312,40 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
       lineNumber: 8
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("head", {
+    className: "jsx-2509694943",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+    async: true,
+    src: "https://www.googletagmanager.com/gtag/js?id=G-0MPQP7QWV3",
+    className: "jsx-2509694943",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+    dangerouslySetInnerHTML: {
+      __html: "\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-0MPQP7QWV3');\n        "
+    },
+    className: "jsx-2509694943",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     styleId: "2509694943",
-    css: "#Maincard.jsx-2509694943{margin:30px;width:70%;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;}#Code.jsx-2509694943,#Demo.jsx-2509694943{margin:10px;}#btn-container.jsx-2509694943{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xccm96ZW1cXERldmVsb3BlclBvcnRmb2xpb1xcRGV2ZWxvcGVyUG9ydGZvbGlvXFxwYWdlc1xcY29udGFjdC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFVZSxBQUllLEFBT0EsQUFHUSxZQVRWLEFBT1osVUFOc0IsZ0ZBU3RCLHNCQVJBIiwiZmlsZSI6IkM6XFxVc2Vyc1xccm96ZW1cXERldmVsb3BlclBvcnRmb2xpb1xcRGV2ZWxvcGVyUG9ydGZvbGlvXFxwYWdlc1xcY29udGFjdC5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG5pbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnXHJcbmltcG9ydCBMYXlvdXQgZnJvbSAnLi4vY29tcG9uZW50cy9NeUxheW91dCc7XHJcbmltcG9ydCBDYXJkIGZyb20gJ3JlYWN0LWJvb3RzdHJhcC9DYXJkJztcclxuaW1wb3J0IEJ1dHRvbiBmcm9tICdyZWFjdC1ib290c3RyYXAvQnV0dG9uJztcclxuXHJcbmV4cG9ydCBkZWZhdWx0ICgpID0+IChcclxuPGRpdj5cclxuXHJcblxyXG4gIDxzdHlsZSBqc3g+IHtgIFxyXG4jTWFpbmNhcmQge1xyXG4gIFxyXG4gIG1hcmdpbjogMzBweDtcclxuICB3aWR0aDogNzAlO1xyXG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG59XHJcblxyXG5cclxuI0NvZGUsICNEZW1vIHtcclxuICBtYXJnaW46IDEwcHg7XHJcbn1cclxuI2J0bi1jb250YWluZXIge1xyXG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG59XHJcbiAgXHJcbiAgXHJcbiAgXHJcbiAgYH0gPC8gc3R5bGUgPlxyXG5cclxuXHJcblxyXG5cclxuXHJcblxyXG5cclxuXHJcblxyXG5cclxuXHJcbiAgPExheW91dD5cclxuICBcclxuICAgIDxkaXYgaWQ9XCJNYWluY2FyZFwiPlxyXG4gICAgPENhcmQgc3R5bGU9e3sgd2lkdGg6ICc0MHJlbScgfX0+XHJcbiA8Q2FyZC5Cb2R5PlxyXG4gICA8Q2FyZC5UaXRsZT5Db250YWN0IERldGFpbHM8L0NhcmQuVGl0bGU+XHJcbiAgIDxDYXJkLlN1YnRpdGxlIGNsYXNzTmFtZT1cIm1iLTIgdGV4dC1tdXRlZFwiPkNlbGw6IDA3MyA1MDAgMTQzNzwvQ2FyZC5TdWJ0aXRsZT5cclxuICAgPENhcmQuU3VidGl0bGUgY2xhc3NOYW1lPVwibWItMiB0ZXh0LW11dGVkXCI+R2l0aHViIEFjY291bnQ6IDxhIGhyZWY9XCJodHRwczovL2dpdGh1Yi5jb20vVHJvemVtYVwiPkxpbms8L2E+PC9DYXJkLlN1YnRpdGxlPlxyXG4gICA8Q2FyZC5TdWJ0aXRsZSBjbGFzc05hbWU9XCJtYi0yIHRleHQtbXV0ZWRcIj5MaW5rZWRpbjogPGEgaHJlZj1cImh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi90aG9tYXNqYW5yb3plbWEvXCI+TGluazwvYT48L0NhcmQuU3VidGl0bGU+XHJcbiAgIDxDYXJkLlN1YnRpdGxlIGNsYXNzTmFtZT1cIm1iLTIgdGV4dC1tdXRlZFwiPkVtYWlsOiA8YT5yb3plbWEudGhvbWFzQGdtYWlsLmNvbTwvYT48L0NhcmQuU3VidGl0bGU+XHJcbiA8L0NhcmQuQm9keT5cclxuPC9DYXJkPlxyXG48L2Rpdj5cclxuICA8L0xheW91dD5cclxuICA8L2Rpdj5cclxuKSJdfQ== */\n/*@ sourceURL=C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pages\\contact.js */",
+    css: "#Maincard.jsx-2509694943{margin:30px;width:70%;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;}#Code.jsx-2509694943,#Demo.jsx-2509694943{margin:10px;}#btn-container.jsx-2509694943{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xccm96ZW1cXERldmVsb3BlclBvcnRmb2xpb1xcRGV2ZWxvcGVyUG9ydGZvbGlvXFxwYWdlc1xcY29udGFjdC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2QmUsQUFJZSxBQU9BLEFBR1EsWUFUVixBQU9aLFVBTnNCLGdGQVN0QixzQkFSQSIsImZpbGUiOiJDOlxcVXNlcnNcXHJvemVtXFxEZXZlbG9wZXJQb3J0Zm9saW9cXERldmVsb3BlclBvcnRmb2xpb1xccGFnZXNcXGNvbnRhY3QuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJ1xyXG5pbXBvcnQgTGF5b3V0IGZyb20gJy4uL2NvbXBvbmVudHMvTXlMYXlvdXQnO1xyXG5pbXBvcnQgQ2FyZCBmcm9tICdyZWFjdC1ib290c3RyYXAvQ2FyZCc7XHJcbmltcG9ydCBCdXR0b24gZnJvbSAncmVhY3QtYm9vdHN0cmFwL0J1dHRvbic7XHJcblxyXG5leHBvcnQgZGVmYXVsdCAoKSA9PiAoXHJcbjxkaXY+XHJcblxyXG5cclxuPGhlYWQ+XHJcbiAgPHNjcmlwdFxyXG4gICAgYXN5bmNcclxuICAgIHNyYz1cImh0dHBzOi8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0YWcvanM/aWQ9Ry0wTVBRUDdRV1YzXCJcclxuICAvPlxyXG5cclxuICA8c2NyaXB0XHJcbiAgICBkYW5nZXJvdXNseVNldElubmVySFRNTD17e1xyXG4gICAgICBfX2h0bWw6IGBcclxuICAgICAgICAgICAgd2luZG93LmRhdGFMYXllciA9IHdpbmRvdy5kYXRhTGF5ZXIgfHwgW107XHJcbiAgICAgICAgICAgIGZ1bmN0aW9uIGd0YWcoKXtkYXRhTGF5ZXIucHVzaChhcmd1bWVudHMpO31cclxuICAgICAgICAgICAgZ3RhZygnanMnLCBuZXcgRGF0ZSgpKTtcclxuICAgICAgICAgICAgZ3RhZygnY29uZmlnJywgJ0ctME1QUVA3UVdWMycpO1xyXG4gICAgICAgIGAsXHJcbiAgICB9fVxyXG4gIC8+XHJcbjwvaGVhZD5cclxuXHJcblxyXG4gIDxzdHlsZSBqc3g+IHtgIFxyXG4jTWFpbmNhcmQge1xyXG4gIFxyXG4gIG1hcmdpbjogMzBweDtcclxuICB3aWR0aDogNzAlO1xyXG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG59XHJcblxyXG5cclxuI0NvZGUsICNEZW1vIHtcclxuICBtYXJnaW46IDEwcHg7XHJcbn1cclxuI2J0bi1jb250YWluZXIge1xyXG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG59XHJcbiAgXHJcbiAgXHJcbiAgXHJcbiAgYH0gPC8gc3R5bGUgPlxyXG5cclxuXHJcbiAgPExheW91dD5cclxuICBcclxuICAgIDxkaXYgaWQ9XCJNYWluY2FyZFwiPlxyXG4gICAgPENhcmQgc3R5bGU9e3sgd2lkdGg6ICc0MHJlbScgfX0+XHJcbiA8Q2FyZC5Cb2R5PlxyXG4gICA8Q2FyZC5UaXRsZT5Db250YWN0IERldGFpbHM8L0NhcmQuVGl0bGU+XHJcbiAgIDxDYXJkLlN1YnRpdGxlIGNsYXNzTmFtZT1cIm1iLTIgdGV4dC1tdXRlZFwiPkNlbGw6IDA3MyA1MDAgMTQzNzwvQ2FyZC5TdWJ0aXRsZT5cclxuICAgPENhcmQuU3VidGl0bGUgY2xhc3NOYW1lPVwibWItMiB0ZXh0LW11dGVkXCI+R2l0aHViIEFjY291bnQ6IDxhIGhyZWY9XCJodHRwczovL2dpdGh1Yi5jb20vVHJvemVtYVwiPkxpbms8L2E+PC9DYXJkLlN1YnRpdGxlPlxyXG4gICA8Q2FyZC5TdWJ0aXRsZSBjbGFzc05hbWU9XCJtYi0yIHRleHQtbXV0ZWRcIj5MaW5rZWRpbjogPGEgaHJlZj1cImh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi90aG9tYXNqYW5yb3plbWEvXCI+TGluazwvYT48L0NhcmQuU3VidGl0bGU+XHJcbiAgIDxDYXJkLlN1YnRpdGxlIGNsYXNzTmFtZT1cIm1iLTIgdGV4dC1tdXRlZFwiPkVtYWlsOiA8YT5yb3plbWEudGhvbWFzQGdtYWlsLmNvbTwvYT48L0NhcmQuU3VidGl0bGU+XHJcbiA8L0NhcmQuQm9keT5cclxuPC9DYXJkPlxyXG48L2Rpdj5cclxuICA8L0xheW91dD5cclxuICA8L2Rpdj5cclxuKSJdfQ== */\n/*@ sourceURL=C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pages\\contact.js */",
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_MyLayout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 51
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -340,7 +353,7 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
     className: "jsx-2509694943",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -349,33 +362,33 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 54
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Body, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 55
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Title, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 56
     },
     __self: this
   }, "Contact Details"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Subtitle, {
     className: "mb-2 text-muted",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 57
     },
     __self: this
   }, "Cell: 073 500 1437"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Subtitle, {
     className: "mb-2 text-muted",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 58
     },
     __self: this
   }, "Github Account: ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
@@ -383,14 +396,14 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
     className: "jsx-2509694943",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 58
     },
     __self: this
   }, "Link")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Subtitle, {
     className: "mb-2 text-muted",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 59
     },
     __self: this
   }, "Linkedin: ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
@@ -398,21 +411,21 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
     className: "jsx-2509694943",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 59
     },
     __self: this
   }, "Link")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Subtitle, {
     className: "mb-2 text-muted",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 60
     },
     __self: this
   }, "Email: ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     className: "jsx-2509694943",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 60
     },
     __self: this
   }, "rozema.thomas@gmail.com")))))));
@@ -420,7 +433,7 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/

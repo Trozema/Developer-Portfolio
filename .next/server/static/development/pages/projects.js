@@ -226,38 +226,25 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\components\\MyLayout.js";
 
 
-/* In our app, we'll use a common style across various pages. For this purpose, we can create a common Layout component and use it for each of our pages. Here's an example: 
-
-Since Next.js is used to create server-rendered pages, adding a link using a normal <a> tag would cause a link that would be navigated to via the server. 
-This is obviously not always necessary. 
-To support client-side navigation (this takes place in the browser, without making a request to the server) we use Next.js’ Link API.*/
-
-/*You can use this built-in component to append elements to the <head> element of the page. More info here: https://github.com/zeit/next.js/#populating-head 
-Notice that we add the link for the stylesheet for using React-Bootstrap components to the <Head>. */
-
 
 
 var layoutStyle = {
   margin: 20,
   padding: 20,
   border: '1px solid #DDD'
-  /* Notice in the example below that we pass children and title as props to the Layout components.
-  If you remove {children}, the Layout cannot render the content we put inside the Layout element. 
-  Have a look at ./pages/index.js to see where we pass props through to this Layout Component. */
-
 };
 
 var Layout = function Layout(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -267,20 +254,20 @@ var Layout = function Layout(props) {
     crossorigin: "anonymous",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 17
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: layoutStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 24
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 25
     },
     __self: this
   }), props.children));
@@ -322,17 +309,43 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
     className: "jsx-487650486",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 11
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("head", {
+    className: "jsx-487650486",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+    async: true,
+    src: "https://www.googletagmanager.com/gtag/js?id=G-0MPQP7QWV3",
+    className: "jsx-487650486",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+    dangerouslySetInnerHTML: {
+      __html: "\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-0MPQP7QWV3');\n        "
+    },
+    className: "jsx-487650486",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     styleId: "487650486",
-    css: "#Maincard.jsx-487650486{text-align:center;margin:30px;width:70%;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;}#Code.jsx-487650486,#Demo.jsx-487650486{margin:10px;}#btn-container.jsx-487650486{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xccm96ZW1cXERldmVsb3BlclBvcnRmb2xpb1xcRGV2ZWxvcGVyUG9ydGZvbGlvXFxwYWdlc1xccHJvamVjdHMuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBVWUsQUFHcUIsQUFRTixBQUdRLFlBRnRCLE1BUmMsWUFDRixVQUNVLDhEQVN0Qix3Q0FSQSIsImZpbGUiOiJDOlxcVXNlcnNcXHJvemVtXFxEZXZlbG9wZXJQb3J0Zm9saW9cXERldmVsb3BlclBvcnRmb2xpb1xccGFnZXNcXHByb2plY3RzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcclxuaW1wb3J0IExheW91dCBmcm9tICcuLi9jb21wb25lbnRzL015TGF5b3V0JztcclxuaW1wb3J0IENhcmQgZnJvbSAncmVhY3QtYm9vdHN0cmFwL0NhcmQnO1xyXG5pbXBvcnQgQnV0dG9uIGZyb20gJ3JlYWN0LWJvb3RzdHJhcC9CdXR0b24nO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgKCkgPT4gKFxyXG48ZGl2PlxyXG5cclxuXHJcbiAgPHN0eWxlIGpzeD4ge2AgXHJcbiNNYWluY2FyZCB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIG1hcmdpbjogMzBweDtcclxuICB3aWR0aDogNzAlO1xyXG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG59XHJcblxyXG5cclxuI0NvZGUsICNEZW1vIHtcclxuICBtYXJnaW46IDEwcHg7XHJcbn1cclxuI2J0bi1jb250YWluZXIge1xyXG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG59XHJcbiAgXHJcbiAgXHJcbiAgXHJcbiAgYH0gPC8gc3R5bGUgPlxyXG5cclxuXHJcbiAgPExheW91dD5cclxuICAgIDxkaXYgaWQ9XCJNYWluY2FyZFwiPlxyXG4gICAgPENhcmQgaWQ9XCJjYXJkXCIgc3R5bGU9e3sgd2lkdGg6ICc0MHJlbScgfX0+XHJcbiA8Q2FyZC5Cb2R5PlxyXG4gICA8Q2FyZC5JbWcgaWQ9XCJJdHVuZXNQaWNcIiBzcmM9XCIvc3RhdGljL2ltYWdlcy9JdHVuZXNfQVBJX0FwcC5wbmcvXCI+PC9DYXJkLkltZz5cclxuICAgXHJcbiAgIDxDYXJkLlRpdGxlPkl0dW5lcyBBUEkgUHJvamVjdDwvQ2FyZC5UaXRsZT5cclxuICAgPENhcmQuU3VidGl0bGUgY2xhc3NOYW1lPVwibWItMiB0ZXh0LW11dGVkXCI+VGhpcyBwcm9qZWN0IHdhcyBidWlsdCB1c2luZyB0aGUgTUVSTiBzdGFjay4gVGhlIEl0dW5lcyBBUEkgY29ubmVjdHMgdG8gZXhwcmVzcyBpbiB0aGUgYmFja2VuZCBhbmQgUmVhY3QgaXMgdXNlZCBmb3IgdGhlIGZyb250ZW5kIG9mIHRoZSBBcHAuPC9DYXJkLlN1YnRpdGxlPlxyXG48ZGl2IGlkPVwiYnRuLWNvbnRhaW5lclwiPlxyXG4gICA8ZGl2IGlkPVwiRGVtb1wiPlxyXG4gIDxCdXR0b24gaHJlZj1cImh0dHBzOi8vY3J5cHRpYy1tZWFkb3ctMDY5MDUuaGVyb2t1YXBwLmNvbS9cIj5WaWV3IERlbW88L0J1dHRvbj5cclxuICAgPC9kaXY+XHJcbiAgIDxkaXYgaWQ9XCJDb2RlXCI+XHJcbiAgIDxCdXR0b24gaHJlZj1cImh0dHBzOi8vZ2l0aHViLmNvbS9Ucm96ZW1hL0lULVN0b3JlLVByb2plY3QuZ2l0XCI+VmlldyBDb2RlPC9CdXR0b24+XHJcbiAgIDwvZGl2PlxyXG4gICA8L2Rpdj5cclxuIDwvQ2FyZC5Cb2R5PlxyXG48L0NhcmQ+XHJcbjwvZGl2PlxyXG4gIDwvTGF5b3V0PlxyXG4gIDwvZGl2PlxyXG4pIl19 */\n/*@ sourceURL=C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pages\\projects.js */",
+    css: "#Maincard.jsx-487650486{text-align:center;margin:30px;width:70%;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;}#Code.jsx-487650486,#Demo.jsx-487650486{margin:10px;}#btn-container.jsx-487650486{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xccm96ZW1cXERldmVsb3BlclBvcnRmb2xpb1xcRGV2ZWxvcGVyUG9ydGZvbGlvXFxwYWdlc1xccHJvamVjdHMuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBbUNlLEFBR3FCLEFBUU4sQUFHUSxZQUZ0QixNQVJjLFlBQ0YsVUFDVSw4REFTdEIsd0NBUkEiLCJmaWxlIjoiQzpcXFVzZXJzXFxyb3plbVxcRGV2ZWxvcGVyUG9ydGZvbGlvXFxEZXZlbG9wZXJQb3J0Zm9saW9cXHBhZ2VzXFxwcm9qZWN0cy5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG5pbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnXHJcbmltcG9ydCBMYXlvdXQgZnJvbSAnLi4vY29tcG9uZW50cy9NeUxheW91dCc7XHJcbmltcG9ydCBDYXJkIGZyb20gJ3JlYWN0LWJvb3RzdHJhcC9DYXJkJztcclxuaW1wb3J0IEJ1dHRvbiBmcm9tICdyZWFjdC1ib290c3RyYXAvQnV0dG9uJztcclxuXHJcblxyXG5cclxuZXhwb3J0IGRlZmF1bHQgKCkgPT4gKFxyXG5cclxuPGRpdj5cclxuXHJcbjxoZWFkPlxyXG4gIDxzY3JpcHRcclxuICAgIGFzeW5jXHJcbiAgICBzcmM9XCJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbS9ndGFnL2pzP2lkPUctME1QUVA3UVdWM1wiXHJcbiAgLz5cclxuXHJcbiAgPHNjcmlwdFxyXG4gICAgZGFuZ2Vyb3VzbHlTZXRJbm5lckhUTUw9e3tcclxuICAgICAgX19odG1sOiBgXHJcbiAgICAgICAgICAgIHdpbmRvdy5kYXRhTGF5ZXIgPSB3aW5kb3cuZGF0YUxheWVyIHx8IFtdO1xyXG4gICAgICAgICAgICBmdW5jdGlvbiBndGFnKCl7ZGF0YUxheWVyLnB1c2goYXJndW1lbnRzKTt9XHJcbiAgICAgICAgICAgIGd0YWcoJ2pzJywgbmV3IERhdGUoKSk7XHJcbiAgICAgICAgICAgIGd0YWcoJ2NvbmZpZycsICdHLTBNUFFQN1FXVjMnKTtcclxuICAgICAgICBgLFxyXG4gICAgfX1cclxuICAvPlxyXG48L2hlYWQ+XHJcblxyXG5cclxuXHJcblxyXG5cclxuXHJcbiAgPHN0eWxlIGpzeD4ge2AgXHJcbiNNYWluY2FyZCB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIG1hcmdpbjogMzBweDtcclxuICB3aWR0aDogNzAlO1xyXG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG59XHJcblxyXG5cclxuI0NvZGUsICNEZW1vIHtcclxuICBtYXJnaW46IDEwcHg7XHJcbn1cclxuI2J0bi1jb250YWluZXIge1xyXG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG59XHJcbiAgXHJcbiAgXHJcbiAgXHJcbiAgYH0gPC8gc3R5bGUgPlxyXG5cclxuXHJcbiAgPExheW91dD5cclxuICAgIDxkaXYgaWQ9XCJNYWluY2FyZFwiPlxyXG4gICAgPENhcmQgaWQ9XCJjYXJkXCIgc3R5bGU9e3sgd2lkdGg6ICc0MHJlbScgfX0+XHJcbiA8Q2FyZC5Cb2R5PlxyXG4gICA8Q2FyZC5JbWcgaWQ9XCJJdHVuZXNQaWNcIiBzcmM9XCIvc3RhdGljL2ltYWdlcy9JdHVuZXNfQVBJX0FwcC5wbmcvXCI+PC9DYXJkLkltZz5cclxuICAgXHJcbiAgIDxDYXJkLlRpdGxlPkl0dW5lcyBBUEkgUHJvamVjdDwvQ2FyZC5UaXRsZT5cclxuICAgPENhcmQuU3VidGl0bGUgY2xhc3NOYW1lPVwibWItMiB0ZXh0LW11dGVkXCI+VGhpcyBwcm9qZWN0IHdhcyBidWlsdCB1c2luZyB0aGUgTUVSTiBzdGFjay4gVGhlIEl0dW5lcyBBUEkgY29ubmVjdHMgdG8gZXhwcmVzcyBpbiB0aGUgYmFja2VuZCBhbmQgUmVhY3QgaXMgdXNlZCBmb3IgdGhlIGZyb250ZW5kIG9mIHRoZSBBcHAuPC9DYXJkLlN1YnRpdGxlPlxyXG48ZGl2IGlkPVwiYnRuLWNvbnRhaW5lclwiPlxyXG4gICA8ZGl2IGlkPVwiRGVtb1wiPlxyXG4gIDxCdXR0b24gaHJlZj1cImh0dHBzOi8vY3J5cHRpYy1tZWFkb3ctMDY5MDUuaGVyb2t1YXBwLmNvbS9cIj5WaWV3IERlbW88L0J1dHRvbj5cclxuICAgPC9kaXY+XHJcbiAgIDxkaXYgaWQ9XCJDb2RlXCI+XHJcbiAgIDxCdXR0b24gaHJlZj1cImh0dHBzOi8vZ2l0aHViLmNvbS9Ucm96ZW1hL0lULVN0b3JlLVByb2plY3QuZ2l0XCI+VmlldyBDb2RlPC9CdXR0b24+XHJcbiAgIDwvZGl2PlxyXG4gICA8L2Rpdj5cclxuIDwvQ2FyZC5Cb2R5PlxyXG48L0NhcmQ+XHJcbjwvZGl2PlxyXG48ZGl2IGlkPVwiTWFpbmNhcmRcIj5cclxuICAgIDxDYXJkIGlkPVwiY2FyZFwiIHN0eWxlPXt7IHdpZHRoOiAnNDByZW0nIH19PlxyXG4gPENhcmQuQm9keT5cclxuICAgPENhcmQuSW1nIGlkPVwiSW52ZW50b3J5UGljXCIgc3JjPVwiL3N0YXRpYy9pbWFnZXMvSW52ZW50b3J5X0ltYWdlLnBuZy9cIj48L0NhcmQuSW1nPlxyXG4gICBcclxuICAgPENhcmQuVGl0bGU+SW52ZW50b3J5IE1hbmFnZW1lbnQgQXBwPC9DYXJkLlRpdGxlPlxyXG4gICA8Q2FyZC5TdWJ0aXRsZSBjbGFzc05hbWU9XCJtYi0yIHRleHQtbXV0ZWRcIj5UaGlzIHByb2plY3Qgd2FzIGJ1aWx0IHVzaW5nIHRoZSBNRVJOIHN0YWNrLiBUaGUgQXBwIHVzZXMgTW9uZ29EQiB0byByZXRyaWV2ZSBkYXRhLiBUaGlzIGRhdGEgaXMgbW9kaWZpZWQgYW5kIHZpZXdlZCBpbiBSZWFjdCBhbmQgRXhwcmVzcy48L0NhcmQuU3VidGl0bGU+XHJcbjxkaXYgaWQ9XCJidG4tY29udGFpbmVyXCI+XHJcbiAgIDxkaXYgaWQ9XCJEZW1vXCI+XHJcbiAgPEJ1dHRvbiBocmVmPVwiaHR0cHM6Ly9pbnZlbnRvcnltYW5hZ2VtZW50YXBwMS5oZXJva3VhcHAuY29tL1wiPlZpZXcgRGVtbzwvQnV0dG9uPlxyXG4gICA8L2Rpdj5cclxuICAgPGRpdiBpZD1cIkNvZGVcIj5cclxuICAgPEJ1dHRvbiBocmVmPVwiaHR0cHM6Ly9naXRodWIuY29tL1Ryb3plbWEvSW52ZW50b3J5LU1hbmFnZW1lbnQtQXBwLmdpdFwiPlZpZXcgQ29kZTwvQnV0dG9uPlxyXG4gICA8L2Rpdj5cclxuICAgPC9kaXY+XHJcbiA8L0NhcmQuQm9keT5cclxuPC9DYXJkPlxyXG48L2Rpdj5cclxuICA8L0xheW91dD5cclxuXHJcblxyXG5cclxuXHJcblxyXG5cclxuXHJcblxyXG4gIDwvZGl2PlxyXG5cclxuXHJcblxyXG5cclxuXHJcblxyXG4pIl19 */\n/*@ sourceURL=C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pages\\projects.js */",
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_MyLayout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 57
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -340,7 +353,7 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
     className: "jsx-487650486",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 58
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -350,13 +363,13 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 59
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Body, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 60
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Img, {
@@ -364,20 +377,20 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
     src: "/static/images/Itunes_API_App.png/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 61
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Title, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 63
     },
     __self: this
   }, "Itunes API Project"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Subtitle, {
     className: "mb-2 text-muted",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 64
     },
     __self: this
   }, "This project was built using the MERN stack. The Itunes API connects to express in the backend and React is used for the frontend of the App."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -385,7 +398,7 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
     className: "jsx-487650486",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -393,14 +406,14 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
     className: "jsx-487650486",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 66
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
     href: "https://cryptic-meadow-06905.herokuapp.com/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 67
     },
     __self: this
   }, "View Demo")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -408,14 +421,97 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
     className: "jsx-487650486",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 69
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
     href: "https://github.com/Trozema/IT-Store-Project.git",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 70
+    },
+    __self: this
+  }, "View Code")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    id: "Maincard",
+    className: "jsx-487650486",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    id: "card",
+    style: {
+      width: '40rem'
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Body, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Img, {
+    id: "InventoryPic",
+    src: "/static/images/Inventory_Image.png/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Title, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81
+    },
+    __self: this
+  }, "Inventory Management App"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4___default.a.Subtitle, {
+    className: "mb-2 text-muted",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82
+    },
+    __self: this
+  }, "This project was built using the MERN stack. The App uses MongoDB to retrieve data. This data is modified and viewed in React and Express."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    id: "btn-container",
+    className: "jsx-487650486",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    id: "Demo",
+    className: "jsx-487650486",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    href: "https://inventorymanagementapp1.herokuapp.com/",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85
+    },
+    __self: this
+  }, "View Demo")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    id: "Code",
+    className: "jsx-487650486",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    href: "https://github.com/Trozema/Inventory-Management-App.git",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88
     },
     __self: this
   }, "View Code"))))))));

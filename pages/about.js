@@ -6,6 +6,23 @@ import Image from 'react-bootstrap/Image';
 export default () => (
 <div>
 
+<head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-0MPQP7QWV3"
+  />
+
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0MPQP7QWV3');
+        `,
+    }}
+  />
+</head>
 
   <style jsx> {` 
   profile {

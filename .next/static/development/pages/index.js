@@ -132,38 +132,25 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\components\\MyLayout.js";
 
 
-/* In our app, we'll use a common style across various pages. For this purpose, we can create a common Layout component and use it for each of our pages. Here's an example: 
-
-Since Next.js is used to create server-rendered pages, adding a link using a normal <a> tag would cause a link that would be navigated to via the server. 
-This is obviously not always necessary. 
-To support client-side navigation (this takes place in the browser, without making a request to the server) we use Next.js’ Link API.*/
-
-/*You can use this built-in component to append elements to the <head> element of the page. More info here: https://github.com/zeit/next.js/#populating-head 
-Notice that we add the link for the stylesheet for using React-Bootstrap components to the <Head>. */
-
 
 
 var layoutStyle = {
   margin: 20,
   padding: 20,
   border: '1px solid #DDD'
-  /* Notice in the example below that we pass children and title as props to the Layout components.
-  If you remove {children}, the Layout cannot render the content we put inside the Layout element. 
-  Have a look at ./pages/index.js to see where we pass props through to this Layout Component. */
-
 };
 
 var Layout = function Layout(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -173,20 +160,20 @@ var Layout = function Layout(props) {
     crossorigin: "anonymous",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 17
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: layoutStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 24
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 25
     },
     __self: this
   }), props.children));
@@ -28659,14 +28646,40 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
       lineNumber: 8
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("head", {
+    className: "jsx-3441320211",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+    async: true,
+    src: "https://www.googletagmanager.com/gtag/js?id=G-0MPQP7QWV3",
+    className: "jsx-3441320211",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("script", {
+    dangerouslySetInnerHTML: {
+      __html: "\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-0MPQP7QWV3');\n        "
+    },
+    className: "jsx-3441320211",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     styleId: "3441320211",
-    css: "h2.jsx-3441320211{color:blue;margin-top:20px;}#items.jsx-3441320211{text-align:center;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xccm96ZW1cXERldmVsb3BlclBvcnRmb2xpb1xcRGV2ZWxvcGVyUG9ydGZvbGlvXFxwYWdlc1xcaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBU2MsQUFHWSxBQUlRLFdBSEgsT0FHSSxTQUZwQiIsImZpbGUiOiJDOlxcVXNlcnNcXHJvemVtXFxEZXZlbG9wZXJQb3J0Zm9saW9cXERldmVsb3BlclBvcnRmb2xpb1xccGFnZXNcXGluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcclxuaW1wb3J0IExheW91dCBmcm9tICcuLi9jb21wb25lbnRzL015TGF5b3V0J1xyXG5pbXBvcnQgSW1hZ2UgZnJvbSAncmVhY3QtYm9vdHN0cmFwL0ltYWdlJ1xyXG5cclxuXHJcbmV4cG9ydCBkZWZhdWx0ICgpID0+IChcclxuXHQ8ZGl2PlxyXG5cclxuPCBzdHlsZSBqc3g+IHtgXHJcbmgyIHtcclxuY29sb3I6IGJsdWU7XHJcbm1hcmdpbi10b3A6IDIwcHg7XHJcbn1cclxuI2l0ZW1zIHtcclxuIHRleHQtYWxpZ246IGNlbnRlclxyXG59XHJcbmB9IDwvIHN0eWxlID5cclxuXHJcblxyXG5cdDxMYXlvdXQ+XHJcblx0XHQ8ZGl2IGlkPVwiaXRlbXNcIj5cclxuXHQgICAgPGgyPldlbGNvbWUgdG8gbXkgUG9ydGZvbGlvIHNpdGU8L2gyPlxyXG5cdCAgICA8cD5UaGUga2V5IHB1cnBvc2Ugb2YgdGhpcyBzaXRlIGlzIHRvIHNob3cgbXkgd2ViIGRldmVsb3BlbWVudCBwcm9qZWN0cy4gVGhlIHNpdGUgYWxzbyBnaXZlcyB5b3UgYSBiZXR0ZXIgdW5kZXJzdGFuZGluZyBvZiBtZSBhcyBhIHBlcnNvbi48L3A+XHJcblx0XHQ8cD5Zb3UgY2FuIHVzZSB0aGUgbmF2aWdhdGlvbiBhYm92ZSB0byB2aWV3IG15IHByb2plY3QgYW5kIGxlYXJuIG1vcmUgYWJvdXQgbWU8L3A+XHJcblx0XHQ8L2Rpdj5cclxuICAgPC9MYXlvdXQ+XHJcblxyXG4gIDwvZGl2PlxyXG4pIl19 */\n/*@ sourceURL=C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pages\\index.js */",
+    css: "h2.jsx-3441320211{color:blue;margin-top:20px;}#items.jsx-3441320211{text-align:center;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xccm96ZW1cXERldmVsb3BlclBvcnRmb2xpb1xcRGV2ZWxvcGVyUG9ydGZvbGlvXFxwYWdlc1xcaW5kZXguanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBMkJjLEFBR1ksQUFJUSxXQUhILE9BR0ksU0FGcEIiLCJmaWxlIjoiQzpcXFVzZXJzXFxyb3plbVxcRGV2ZWxvcGVyUG9ydGZvbGlvXFxEZXZlbG9wZXJQb3J0Zm9saW9cXHBhZ2VzXFxpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG5pbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnXHJcbmltcG9ydCBMYXlvdXQgZnJvbSAnLi4vY29tcG9uZW50cy9NeUxheW91dCdcclxuaW1wb3J0IEltYWdlIGZyb20gJ3JlYWN0LWJvb3RzdHJhcC9JbWFnZSdcclxuXHJcblxyXG5leHBvcnQgZGVmYXVsdCAoKSA9PiAoXHJcblx0PGRpdj5cclxuPGhlYWQ+XHJcbiAgPHNjcmlwdFxyXG4gICAgYXN5bmNcclxuICAgIHNyYz1cImh0dHBzOi8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0YWcvanM/aWQ9Ry0wTVBRUDdRV1YzXCJcclxuICAvPlxyXG5cclxuICA8c2NyaXB0XHJcbiAgICBkYW5nZXJvdXNseVNldElubmVySFRNTD17e1xyXG4gICAgICBfX2h0bWw6IGBcclxuICAgICAgICAgICAgd2luZG93LmRhdGFMYXllciA9IHdpbmRvdy5kYXRhTGF5ZXIgfHwgW107XHJcbiAgICAgICAgICAgIGZ1bmN0aW9uIGd0YWcoKXtkYXRhTGF5ZXIucHVzaChhcmd1bWVudHMpO31cclxuICAgICAgICAgICAgZ3RhZygnanMnLCBuZXcgRGF0ZSgpKTtcclxuICAgICAgICAgICAgZ3RhZygnY29uZmlnJywgJ0ctME1QUVA3UVdWMycpO1xyXG4gICAgICAgIGAsXHJcbiAgICB9fVxyXG4gIC8+XHJcbjwvaGVhZD5cclxuXHJcblxyXG48IHN0eWxlIGpzeD4ge2BcclxuaDIge1xyXG5jb2xvcjogYmx1ZTtcclxubWFyZ2luLXRvcDogMjBweDtcclxufVxyXG4jaXRlbXMge1xyXG4gdGV4dC1hbGlnbjogY2VudGVyXHJcbn1cclxuYH0gPC8gc3R5bGUgPlxyXG5cclxuXHJcblx0PExheW91dD5cclxuXHRcdDxkaXYgaWQ9XCJpdGVtc1wiPlxyXG5cdCAgICA8aDI+V2VsY29tZSB0byBteSBQb3J0Zm9saW8gc2l0ZTwvaDI+XHJcblx0ICAgIDxwPlRoZSBrZXkgcHVycG9zZSBvZiB0aGlzIHNpdGUgaXMgdG8gc2hvdyBteSB3ZWIgZGV2ZWxvcGVtZW50IHByb2plY3RzLiBUaGUgc2l0ZSBhbHNvIGdpdmVzIHlvdSBhIGJldHRlciB1bmRlcnN0YW5kaW5nIG9mIG1lIGFzIGEgcGVyc29uLjwvcD5cclxuXHRcdDxwPllvdSBjYW4gdXNlIHRoZSBuYXZpZ2F0aW9uIGFib3ZlIHRvIHZpZXcgbXkgcHJvamVjdCBhbmQgbGVhcm4gbW9yZSBhYm91dCBtZTwvcD5cclxuXHRcdDwvZGl2PlxyXG4gICA8L0xheW91dD5cclxuXHJcbiAgPC9kaXY+XHJcbikiXX0= */\n/*@ sourceURL=C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pages\\index.js */",
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_MyLayout__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 39
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -28674,28 +28687,28 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
     className: "jsx-3441320211",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 40
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
     className: "jsx-3441320211",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 41
     },
     __self: this
   }, "Welcome to my Portfolio site"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     className: "jsx-3441320211",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 42
     },
     __self: this
   }, "The key purpose of this site is to show my web developement projects. The site also gives you a better understanding of me as a person."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     className: "jsx-3441320211",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 43
     },
     __self: this
   }, "You can use the navigation above to view my project and learn more about me"))));
@@ -28722,7 +28735,7 @@ var _jsxFileName = "C:\\Users\\rozem\\DeveloperPortfolio\\DeveloperPortfolio\\pa
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -28747,5 +28760,5 @@ module.exports = dll_33f1da43f3c121a78fa3;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[5,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map

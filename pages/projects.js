@@ -4,8 +4,33 @@ import Layout from '../components/MyLayout';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
+
+
 export default () => (
+
 <div>
+
+<head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-0MPQP7QWV3"
+  />
+
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0MPQP7QWV3');
+        `,
+    }}
+  />
+</head>
+
+
+
+
 
 
   <style jsx> {` 
@@ -48,6 +73,38 @@ export default () => (
  </Card.Body>
 </Card>
 </div>
+<div id="Maincard">
+    <Card id="card" style={{ width: '40rem' }}>
+ <Card.Body>
+   <Card.Img id="InventoryPic" src="/static/images/Inventory_Image.png/"></Card.Img>
+   
+   <Card.Title>Inventory Management App</Card.Title>
+   <Card.Subtitle className="mb-2 text-muted">This project was built using the MERN stack. The App uses MongoDB to retrieve data. This data is modified and viewed in React and Express.</Card.Subtitle>
+<div id="btn-container">
+   <div id="Demo">
+  <Button href="https://inventorymanagementapp1.herokuapp.com/">View Demo</Button>
+   </div>
+   <div id="Code">
+   <Button href="https://github.com/Trozema/Inventory-Management-App.git">View Code</Button>
+   </div>
+   </div>
+ </Card.Body>
+</Card>
+</div>
   </Layout>
+
+
+
+
+
+
+
+
   </div>
+
+
+
+
+
+
 )
